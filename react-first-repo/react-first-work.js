@@ -1,4 +1,6 @@
 import axios from "axios";
+
+// ## this function brings user  and post datas by parameter which is called id 
 const getUserAndPostById=(id)=>{
 
     gettypeControl(id);
@@ -9,6 +11,8 @@ const getUserAndPostById=(id)=>{
 
   
 }
+
+// ## this function is controller for input type
 function gettypeControl(value){
      
 
@@ -21,6 +25,8 @@ function gettypeControl(value){
 
   
 }
+
+//## This function brings the Post Datas by parameter which is called Id
 const  getPostById= (id)=>{
     return new Promise(async(resolve,reject)=>{
         
@@ -39,6 +45,8 @@ const  getPostById= (id)=>{
   
 
 }
+
+//## This function brings the User Datas by parameter which is called Id
 const getUserById=(id)=>{
     return new Promise(async(resolve,reject)=>{
        
@@ -60,4 +68,4 @@ const getUserById=(id)=>{
 //         return false;
 //     }
 // }
-getUserAndPostById("mer");
+getUserAndPostById(1);
